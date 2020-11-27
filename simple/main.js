@@ -6,7 +6,7 @@ const {getRandomIndex} = require("../utils")
 
 const outputFile = '../output/data.txt';
 
-const limit = 100000;
+const limit = 1000000;
 
 console.time();
 (async()=>{

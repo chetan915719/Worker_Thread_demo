@@ -1,6 +1,6 @@
 const { Worker } = require("worker_threads");
 
-const limit = 100000;
+const limit = 1000000;
 const threads = 10;
 const namesPerThread = limit / threads;
 const outputFile = '../output/data.txt';
