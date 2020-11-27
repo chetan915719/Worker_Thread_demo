@@ -1,10 +1,12 @@
-const WorkerPool = require('./worker_pool.js');
+const WorkerPool = require('./worker_pool/worker_pool.js');
 const os = require('os');
+const path = require('path');
+resolve = require('path').resolve;
 
-const limit = 1000000;
+const limit = 1000;
 const threads = 10;
 const namesPerThread = limit / threads;
-const outputFile = '../output/data.txt';
+const outputFile = resolve('./output/data.txt')
 const workerTask = 'task_processor.js'
 
 const pool = new WorkerPool(threads,workerTask);
